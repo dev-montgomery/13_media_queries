@@ -3,9 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Media Queries</title>
+  <style>
+    body {
+      font-family:Arial, Helvetica, sans-serif;
+      background: #333;
+      color: #7c7c7c;
+      text-align: center;
+      padding: 50px;
+    }
+    
+    /* Smartphones */
+    @media only screen and (max-width: 500px) {
+      #smartphone {
+        color: #fff;
+      }
+    }
+
+    /* Tablet */
+    @media (min-width: 501px) and (max-width: 768px) {
+      #tablet {
+        color: #fff;
+      }
+    }
+
+    /* Normal */
+    @media (min-width: 769px) and (max-width: 1200px) {
+      #normal {
+        color: #fff;
+      }
+    }
+
+    /* Widescreen */
+    @media (min-width: 1201px) {
+      #widescreen {
+        color: #fff;
+      }
+    }
+
+    /* Landscape */
+    @media (max-height: 500px) {
+      #landscape {
+        color: #fff;
+      }
+    }    
+
+  </style>
 </head>
 <body>
-  
+  <div id="smartphone"><h1>Smartphone</h1></div>
+  <div id="tablet"><h1>Tablet</h1></div>
+  <div id="normal"><h1>Normal</h1></div>
+  <div id="widescreen"><h1>Widescreen</h1></div>
+  <div id="landscape"><h1>Landscape</h1></div>
 </body>
 </html>
